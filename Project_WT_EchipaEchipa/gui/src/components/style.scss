@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.base-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+
+  .header {
+    font-size: 24px;
+    font-family: "Montserrat";
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .formm {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content;
+        label {
+          font-size: 20px;
+        }
+
+        input {
+          margin-top: 6px;
+          min-width: 18em;
+          height: 37px;
+          padding: 0px 10px;
+          font-size: 16px;
+          font-family: "Montserrat";
+          background-color: #f3f3f3;
+          border: 0;
+          border-radius: 4px;
+          margin-bottom: 31px;
+          transition: all 250ms ease-in-out;
+          &:focus {
+            outline: none;
+            box-shadow: 0px 0px 12px 0.8px #0eceae96;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.btn {
+  font-size: 21px;
+  padding: 5px 20px;
+  border: 0;
+  background-color: #ffc0cb;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #ffc0cb;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn2 {
+  font-size: 21px;
+  padding: 5px 20px;
+  border: 3px solid #ffc0cb;
+  background-color: #fff;
+  color: #ffc0cb;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #ffc0cb;
+    color: #fff;
+  }
+  &:focus {
+    outline: none;
+  }
+}
